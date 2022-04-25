@@ -2,13 +2,108 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <!-- Font Ubuntu-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>A propos</title>
+
+    <style>
+        body {
+            font-family: 'Ubuntu',serif;
+            font-style: normal;
+            background-color: rgba(255, 237, 224, 1);
+        }
+        #title>h2:hover {
+            color: rgba(106, 31, 3, 1);
+        }
+
+        #title>img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 87px;
+            top: 58px;
+        }
+
+        #title>h2 {
+            position: absolute;
+            left: 155px;
+            top: 55px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #212121;
+        }
+
+        #apropos-img {
+            width: 500px;
+            position: absolute;
+            left: 150px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #avis-container {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .avis-item {
+            width: 600px;
+            margin: 70px 0;
+        }
+        .avis-item > img {
+            height: 30px;
+        }
+        .avis-item > p {
+            margin: 0;
+            text-align: justify;
+        }
+
+        #contact {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #contact > a {
+            text-decoration: unset;
+            color: #212121;
+        }
+    </style>
 </head>
 
 <body>
-    Bienvenue sur la page a propos
-    <a href="index.html">Retour a l'accueil</a>
+    <a id="title" href="index.html">
+        <img src="images/logo.png" alt="Logo" />
+        <h2>Mon assistant de cuisine</h2>
+    </a>
+
+    <img id="apropos-img" src="images/apropos.png" alt="A propos">
+
+    <div id="avis-container">
+        <div class="avis-item">
+            <img src="images/stars.png" alt="Stars"/>
+            <p>Des recettes de chef, faciles et rapides à préparer, qui nous font découvrir de nouvelles saveurs et redécouvrir des produits plus courants sous un autre mode de préparation.</p>
+        </div>
+
+        <div class="avis-item">
+            <img src="images/stars.png" alt="Stars"/>
+            <p>Le site est très simple d'utilisation. j'ai été très agréablement surprise. Si vous ne voulez pas vous embêter à chercher des recettes, n'hésitez plus!</p>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h3>Créé par Marie Delrieu</h3>
+        <a href="mailto: mariedelrieur01@gmail.com">mariedelrieur01@gmail.com</a>
+    </div>
 
 </body>
 

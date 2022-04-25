@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+    <!-- Font Ubuntu-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <title>Nouilles aux legumes</title>
+
+    <style>
+        body {
+            font-family: 'Ubuntu',serif;
+            font-style: normal;
+            background-color: rgba(255, 237, 224, 1);
+        }
+
+        #nav {
+            position: absolute;
+            right: 100px;
+            top: 68px;
+            font-weight: 400;
+            font-size: 20px;
+            color: rgba(33, 33, 33, 1);
+            /* Supprimer le soulignement*/
+            text-decoration: unset;
+        }
+
+        #nav:hover {
+            color: rgba(106, 31, 3, 1);
+        }
+
+        #title>h2:hover {
+            color: rgba(106, 31, 3, 1);
+        }
+
+        #title>img {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 87px;
+            top: 58px;
+        }
+
+        #title>h2 {
+            position: absolute;
+            left: 155px;
+            top: 55px;
+            font-weight: 400;
+            font-size: 24px;
+            color: #212121;
+        }
+
+        #image {
+            width: 250px;
+            border-radius: 5px;
+
+            position: absolute;
+            top: 200px;
+            left: 80px;
+        }
+
+        h1 {
+            position: absolute;
+            left: 60%;
+            transform: translateX(-60%);
+            top: 180px;
+
+            font-weight: 400;
+            font-size: 32px;
+            text-transform: uppercase;
+
+            color: #000000;
+            margin: 0;
+        }
+
+        #btn-return {
+            position: absolute;
+            top: 210px;
+            left: 30px;
+        }
+
+        #info-container {
+            position: absolute;
+            left: 60%;
+            transform: translateX(-60%);
+            top: 240px;
+        }
+        .info-container-content {
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+        .info-container-content > p {
+            display: inline-block;
+            margin: 0 0 0 5px;
+        }
+        .info-container-content > img {
+            display: inline-block;
+        }
+
+
+
+        #ingredient-container {
+            position: absolute;
+            left: 40%;
+            transform: translateX(-40%);
+            top: 270px;
+        }
+
+        #ingredient-container-content {
+            margin-left: 30px;
+        }
+        #ingredient-container-content > p {
+            margin: 4px 0;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 20px;
+            color: #212121;
+            text-decoration: underline;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 100;
+            font-size: 16px;
+            color: #212121;
+        }
+
+        #preparation-container {
+            position: absolute;
+            left: 80px;
+            top: 500px;
+        }
+
+
+        h3 {
+            position: absolute;
+            bottom: 50px;
+            right: 80px;
+        }
+    </style>
+</head>
+
+<body>
+<a id="title" href="../index.html">
+    <img src="../images/logo.png" alt="Logo" />
+    <h2>Mon assistant de cuisine</h2>
+</a>
+
+<a id="nav" href="../a_propos.html">A Propos</a>
+
+<a id="btn-return" href="../recettes.html"><img src="../images/return.png" alt="Return"></a>
+<img id="image" src="../images/recettes/nouilles_legumes.jpg" alt="Nouilles aux legumes">
+
+<h1>Nouilles aux legumes</h1>
+
+<div id="info-container">
+    <div class="info-container-content">
+        <img src="../images/timer.png" alt="Timer">
+        <p> - 4 pers</p>
+    </div>
+    <div class="info-container-content" style="margin-left: 20px">
+        <img src="../images/heart.png" alt="Heart">
+        <p> - 20 min</p>
+    </div>
+</div>
+
+<div id="ingredient-container">
+    <h2>Ingredients</h2>
+    <div id="ingredient-container-content">
+        <p>400 g de nouilles chinoises</p>
+        <p>300 g de blanc de poulet</p>
+        <p>2 carottes</p>
+        <p>50 g de haricots verts</p>
+        <p>2 oignons</p>
+        <p>1 gousse d'ail</p>
+        <p>3 c. à soupe de sauce soja</p>
+    </div>
+</div>
+
+<div id="preparation-container">
+    <h2>Preparation</h2>
+    <p>
+        Coupez en morceaux les blancs de poulet et coupez les carottes en fines lamelles<br>
+        Hacher l’ail et l’oignon et équeuter les haricots<br><br>
+
+        Versez les nouilles dans une casserole d'eau bouillante le temps indiqué sur le paquet, puis égouttez-les.<br>
+        Dans le wok, chauffez l'huile et faites-y revenir l'ail durant quelques secondes.<br>
+        Incorporez les carottes, les haricots et l'oignon.<br>
+        Rissolez-les pendant 3 min à feu vif.<br><br>
+
+        Ajoutez les blancs de poulet puis mélangez bien. Couvrez et laissez mijoter durant 3 min<br>
+        Ajouter la sauce soja et les blancs de poulets. Laissez mijoter 5min<br>
+        Disposez généreusement les nouilles sautées aux légumes dans une assiette<br>
+    </p>
+</div>
+
+<h3>Bon appetit !</h3>
+
+</body>
+
+</html>

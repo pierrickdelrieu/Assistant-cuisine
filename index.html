@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
 
 
 
@@ -66,13 +66,6 @@
             color: rgba(33, 33, 33, 1);
         }
         
-        #platCentre {
-            position: absolute;
-            width: 200px;
-            left: 952px;
-            top: 357px;
-        }
-        
         #btn-recette {
             display: flex;
             flex-direction: row;
@@ -97,7 +90,73 @@
             margin-right: 10px;
         }
         
-        #btn-recette>img {}
+        #container-img {
+            position: absolute;
+            left: 750px;
+            top: 170px;
+            width: 580px;
+            height: 580px;
+        }
+        
+        #platCentre {
+            width: 200px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        #image1 {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+        
+        #image2 {
+            position: absolute;
+            right: 15%;
+            top: 15%;
+        }
+
+        #image3 {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #image4 {
+            position: absolute;
+            left: 15%;
+            top: 15%;
+        }
+
+        #image5 {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #image6 {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+
+        #image7 {
+            position: absolute;
+            right: 15%;
+            bottom: 15%;
+        }
+
+        #image8 {
+            position: absolute;
+            left: 15%;
+            bottom: 15%;
+        }
     </style>
 </head>
 
@@ -107,7 +166,7 @@
 
 
 <body>
-    <img id="logo" src="assets/images/logo.png" alt="Logo" />
+    <img id="logo" src="images/logo.png" alt="Logo" />
 
     <h1 id="title">Mon assistant de cuisine</h1>
 
@@ -117,18 +176,26 @@
 
     <a id="btn-recette" href="recettes.html">
         <p>Recettes</p>
-        <img src="assets/images/circle.png" alt="Circle" />
+        <img src="images/circle.png" alt="Circle" />
     </a>
 
 
-    <div>
-        <img id="platCentre" src="assets/images/center.png" alt="Plat du centre" />
+    <div id="container-img">
+        <img id="platCentre" src="images/center.png" alt="Plat du centre" />
+        <img id="image1" src="images/image1.png" alt="Image plat 1" />
+        <img id="image2" src="images/image2.png" alt="Image plat 2" />
+        <img id="image4" src="images/image4.png" alt="Image plat 4" />
+
+        <img id="image3" src="images/image3.png" alt="Image plat 3" />
+        <img id="image5" src="images/image5.png" alt="Image plat 5" />
+
+        <img id="image6" src="images/image1.png" alt="Image plat 6" />
+        <img id="image7" src="images/image2.png" alt="Image plat 7" />
+        <img id="image8" src="images/image4.png" alt="Image plat 8" />
+
+
     </div>
 
-
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>
